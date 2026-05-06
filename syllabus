@@ -1,0 +1,63 @@
+core modules
+fs module
+path module
+http module
+os module
+event module
+streams and buffers
+timers
+https server and routing
+create basic server using http
+handling req, res
+handling manually
+query params, url parsing
+headers, status code
+json handling
+express framwork
+intro
+middlewares
+routing
+mvc arcth
+error handling
+static files
+rest api
+database
+mongoose
+curd
+schema and module
+relationship and population
+indexing
+validation
+jwt
+session and cookies
+password hasing
+Oauth
+RBAC
+rate limiting
+cors helmet
+data validation & santitzation
+stream advance
+event emitter
+buffer advance
+cluster 
+worker thread
+child process
+memory managment
+websocket
+socket io
+real time chat app
+notification system 
+webrtc
+api testing
+morgan 
+caching
+redis
+load balacing
+lazy loading
+monolith 
+micro service
+GraphQL basic
+nodemailler
+multer
+
+
