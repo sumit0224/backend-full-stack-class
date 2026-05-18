@@ -1,0 +1,56 @@
+ROLES : user, teacher, admin
+
+
+only develepment time admin created user id & password 
+
+admin can login 
+admin can register all users, all teachers
+admin can check attendece of students & teachers
+admin can see report card of students 
+admin can see profile of both users
+admin can remove user and teachers account 
+admin can manage salary of teachers and fees of student 
+admin can assign class to teacher and class for students
+admin can manage subjects
+admin can send notice
+
+
+teacher login
+teacher can mark self attendece 
+teacher can mark student attendece 
+teacher can create a report card
+teacher can see her salary
+
+
+students 
+check dues of fees
+check report card
+check self attendece 
+see notice
+
+
+
+user model :-
+
+fullname {
+    firstname :
+    lastname
+}
+
+dob
+email
+phone
+batch
+uuid
+password 
+result 
+
+
+teacher 
+
+batch:
+
+
+
+
+
