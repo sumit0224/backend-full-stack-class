@@ -3,8 +3,8 @@ ROLES : user, teacher, admin
 
 only develepment time admin created user id & password 
 
-admin can login 
-admin can register all users, all teachers
+admin can login  done
+admin can register all users, all teachers done
 admin can check attendece of students & teachers
 admin can see report card of students 
 admin can see profile of both users
@@ -15,14 +15,14 @@ admin can manage subjects
 admin can send notice
 
 
-teacher login
+teacher login 
 teacher can mark self attendece 
 teacher can mark student attendece 
 teacher can create a report card
 teacher can see her salary
 
 
-students 
+students login done
 check dues of fees
 check report card
 check self attendece 
@@ -30,25 +30,18 @@ see notice
 
 
 
-user model :-
-
-fullname {
-    firstname :
-    lastname
-}
-
-dob
-email
-phone
-batch
-uuid
-password 
-result 
 
 
-teacher 
+what we done
+admin login , register
+admin register student, teacher
+admin get profile
+student get profile
+teacher get profile
+teacher can login
+student can login
+admin can get all student
 
-batch:
 
 
 

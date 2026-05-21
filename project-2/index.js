@@ -8,6 +8,8 @@ import cookieParser from "cookie-parser";
 import studentRoutes from "./routes/student.js"
 import { auth } from "./middelware/authMiddelware.js";
 import userModel from "./models/userModel.js";
+import teacherRoutes from "./routes/teacher.js"
+import noticeModel from "./models/notice.js";
 
 const app = express();
 app.use(express.json());
@@ -20,24 +22,17 @@ app.get("/", (req, res)=>{
 
 app.use("/api/admin" , adminRoutes)
 app.use("/api/student" , studentRoutes)
+app.use("/api/teacher" , teacherRoutes)
 
-app.get("/:id", auth, async(req, res)=>{
-    const _id = req.user._id 
-    const reqesutId = req.params.id
-
-
+app.get("/notice",async (req, res)=> {
     try {
-        const user = await userModel.findById({_id})
-        if(_id === reqesutId ){
-            res.status(200).json({sucess:true, message: "edit your profile ", user})   
-        }
-        let publicUser = user.fullName
-        res.status(200).json({sucess:true, message: "only profile visit", publicUser})
-
+        const notice = await noticeModel.find();
+        res.status(200).json({success:true, message: "get all notice",notice})
         
     } catch (error) {
-        console.log(error)
+        
     }
+     
 })
 
 
